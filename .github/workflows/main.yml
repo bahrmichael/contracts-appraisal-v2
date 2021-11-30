@@ -30,6 +30,7 @@ jobs:
       # Other steps here include npm install, linting, unit tests, etc
       # Run npm install to get dependencies and make sls available on the path
       - run: npm install
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
