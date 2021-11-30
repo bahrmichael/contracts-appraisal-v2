@@ -1,7 +1,5 @@
-# Main Workflow File
 name: contracts-appraisal-v2
 
-# Triggers the workflow on commits to main branch
 on:
   push:
     branches:

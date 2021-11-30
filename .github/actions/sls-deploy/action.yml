@@ -1,4 +1,3 @@
-# `.github/actions/sls-deploy/action.yml` file
 name: sls-deploy
 description: Deploys a Serverless Framework service
 inputs:
