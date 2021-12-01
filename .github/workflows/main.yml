@@ -19,6 +19,10 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
       PROD_ACCOUNT_ID: ${{ secrets.PROD_ACCOUNT_ID }}
+      APP_API_ACCESS_KEY: ${{ secrets.APP_API_ACCESS_KEY }}
+      SCHEDULER_URL: ${{ secrets.SCHEDULER_URL }}
+      SCHEDULER_USER: ${{ secrets.SCHEDULER_USER }}
+      SCHEDULER_API_KEY: ${{ secrets.SCHEDULER_API_KEY }}
 
     steps:
       - uses: actions/checkout@v2
@@ -45,4 +49,8 @@ jobs:
           service-folder: ${{ env.SERVICE_FOLDER }}
           stage: prod
           aws-account-id: ${{ env.PROD_ACCOUNT_ID }}
+          app-api-access-key: ${{ env.APP_API_ACCESS_KEY }}
+          scheduler-url: ${{ env.SCHEDULER_URL }}
+          scheduler-user: ${{ env.SCHEDULER_USER }}
+          scheduler-api-key: ${{ env.SCHEDULER_API_KEY }}
       # Post-deployment test steps go here

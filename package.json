@@ -1,15 +1,12 @@
 {
   "name": "contracts-appraisal-v2",
   "version": "1.0.0",
-  "description": "Serverless aws-nodejs-typescript template",
-  "main": "servlerss.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "sls deploy"
   },
   "dependencies": {
-    "@middy/core": "^1.5.0",
-    "@middy/http-json-body-parser": "^1.5.0",
+    "axios": "^0.24.0",
+    "axios-retry": "^3.2.4",
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
@@ -19,6 +16,7 @@
     "fork-ts-checker-webpack-plugin": "^6.0.0",
     "json-schema-to-ts": "^1.4.1",
     "serverless": "^2.16.0",
+    "serverless-iam-roles-per-function": "^3.2.0",
     "serverless-webpack": "^5.2.0",
     "ts-loader": "^8.0.10",
     "ts-node": "^9.0.0",
@@ -27,6 +25,5 @@
     "webpack": "^5.4.0",
     "webpack-node-externals": "^2.5.2"
   },
-  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
   "license": "MIT"
 }

@@ -10,6 +10,18 @@ inputs:
   aws-account-id:
     description: AWS Account Id of target environment
     required: true
+  app-api-access-key:
+    description: Access key to let the scheduler call the application
+    required: true
+  scheduler-url:
+    description: URL of the scheduler endpoint
+    required: true
+  scheduler-user:
+    description: User that is registered with the scheduler
+    required: true
+  scheduler-api-key:
+    description: API key that the scheduler generated for our user
+    required: true
 
 runs:
   using: 'composite'
